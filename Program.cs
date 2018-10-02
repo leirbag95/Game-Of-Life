@@ -16,7 +16,6 @@ namespace Jeu_de_la_vie
 
         public static void displayGrid(int[,] grid)
         {
-
             for (int y = 0; y < nb_col; y++)
             {
                 for (int x = 0; x < nb_row; x++)
@@ -48,7 +47,7 @@ namespace Jeu_de_la_vie
         public static int[,] checkAround(int[,] grid, int y, int x, bool withVisual = true)
         {
             int nb_life = 0;
-            /*Setup off grid2 with grid values*/
+            /*Setup of grid2 with grid values*/
             int[,] grid2 = new int[nb_col, nb_row];
             for (int i = 0; i < nb_col; i++)
             {
